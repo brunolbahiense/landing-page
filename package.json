@@ -31,10 +31,12 @@
     "eslint-plugin-react-hooks": "^4.0.4",
     "jest": "^26.0.1",
     "jest-styled-components": "^7.0.2",
-    "prettier": "^2.0.5",
+    "prettier": "2.2.1",
     "typescript": "^3.9.5"
   },
   "dependencies": {
+    "graphql": "^15.4.0",
+    "graphql-request": "^3.4.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "next": "^9.4.4",
