@@ -1,3 +1,9 @@
+export type TechIcon = {
+  title: string
+  icon: {
+    url: string
+  }
+}
 export type LogoProps = {
   alternativeText: string
   url: string
@@ -25,8 +31,14 @@ export type sectionAboutProjectProps = {
   }
 }
 
+export type sectionTechProps = {
+  title: string
+  techIcons: TechIcon[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
   sectionAboutProject: sectionAboutProjectProps
+  sectionTech: sectionTechProps
 }
