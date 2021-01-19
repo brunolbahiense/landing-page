@@ -86,11 +86,28 @@ const GET_LANDING_PAGE = /* GraphQL */ `
         }
         name
         role
-        socialLinks {
-          title
+        description
+      }
+    }
+  }
+  fragment sectionReviews on LandingPage {
+    sectionReviews {
+      title
+      reviews {
+        name
+        text
+        photo {
           url
         }
-        description
+      }
+    }
+  }
+  fragment sectionFaq on LandingPage {
+    sectionFaq {
+      title
+      questions {
+        question
+        answer
       }
     }
   }
@@ -105,6 +122,8 @@ const GET_LANDING_PAGE = /* GraphQL */ `
       ...sectionAgenda
       ...pricingBox
       ...sectionAboutUs
+      ...sectionReviews
+      ...sectionFaq
     }
   }
 `
